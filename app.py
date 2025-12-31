@@ -77,7 +77,7 @@ else:
 st.sidebar.divider()
 with st.sidebar.expander("Admin Settings"):
     password = st.text_input("Enter Admin Password", type="password")
-    if password == "your_secret_password": # Change this to a real password
+    if password == "Abhinav@no.1": # real password
         st.write("Admin Access Granted")
         
         # Get the names
