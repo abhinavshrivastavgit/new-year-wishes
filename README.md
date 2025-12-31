@@ -1,4 +1,4 @@
-[🎆 The 2026 Celebration Wall
+🎆 The 2026 Celebration Wall
 A real-time, community-driven New Year greeting engine.
 
 This isn't just a webpage; it’s a digital time capsule. Built with Python and Streamlit, this app allows users to trigger a celebration and immortalize their name on the global "Wall of Fame."
