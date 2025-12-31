@@ -67,3 +67,33 @@ if all_names:
         cols[index % 3].markdown(f"🎈 **{name}**")
 else:
     st.write("The wall is empty. Be the first to leave your mark!")
+
+
+
+
+
+
+    # --- ADMIN SECTION ---
+st.sidebar.divider()
+with st.sidebar.expander("Admin Settings"):
+    password = st.text_input("Enter Admin Password", type="password")
+    if password == "your_secret_password": # Change this to a real password
+        st.write("Admin Access Granted")
+        
+        # Get the names
+        current_names = get_names()
+        
+        # Select names to remove
+        names_to_delete = st.multiselect("Select names to remove:", current_names)
+        
+        if st.button("Delete Selected Names"):
+            # Filter the list
+            updated_names = [n for n in current_names if n not in names_to_delete]
+            
+            # Overwrite the file
+            with open(DB_FILE, "w", encoding="utf-8") as f:
+                for n in updated_names:
+                    f.write(n + "\n")
+            
+            st.success("Names removed! Refreshing...")
+            st.rerun()
