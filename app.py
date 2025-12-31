@@ -47,7 +47,7 @@ if submitted:
         save_name(user_name)
         st.balloons()
         st.success(f"🎆 Happy New Year from {user_name}!")
-        st.confetti() # Only works in some versions, balloons are safer!
+        # st.confetti() # Only works in some versions, balloons are safer!
     else:
         st.warning("Please enter a name first!")
 
