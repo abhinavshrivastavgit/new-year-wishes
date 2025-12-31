@@ -69,7 +69,11 @@ else:
     st.write("The wall is empty. Be the first to leave your mark!")
 
 
-
+# --- VISITOR COUNTER ---
+# This uses a free service called 'Strapiviz' or similar tiny pixel trackers
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📈 App Stats")
+st.sidebar.image("https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fyour-app-link.streamlit.app&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false")
 
 
 
